@@ -69,10 +69,7 @@ def test(model, classifier, data):
 
 
 def train(args):
-	if args['inoculate']:
-		train_data_file = open(args['in_dir']+"train_inoculation.pkl",'rb')
-	else:
-		train_data_file = open(args['in_dir']+"train.pkl",'rb')
+	train_data_file = open(args['in_dir']+"train.pkl",'rb')
 	dev_data_file = open(args['in_dir']+"dev.pkl",'rb')
 	test_data_file = open(args['in_dir']+"test_alpha1.pkl",'rb')
 
